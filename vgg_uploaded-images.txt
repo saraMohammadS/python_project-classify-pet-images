@@ -1,0 +1,79 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                     Dog_01.jpg  label:                        dog
+ 2 key:                     Dog_02.jpg  label:                        dog
+ 3 key:      Scottish _Fold_Cat_01.jpg  label:                   fold cat
+ 4 key:                   Table_01.jpg  label:                      table
+
+     MATCH:
+
+ NOT A MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier: american staffordshire terrier, staffordshire terrier, american pit bull terrier, pit bull terrier
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier: american staffordshire terrier, staffordshire terrier, american pit bull terrier, pit bull terrier
+
+     Scottish _Fold_Cat_01.jpg: 
+Real:                   fold cat   Classifier:               persian cat, cat
+
+                  Table_01.jpg: 
+Real:                      table   Classifier:                           desk
+
+# Total Images 4 # Matches: 0 # NOT Matches: 4
+
+     MATCH:
+
+ NOT A MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier: american staffordshire terrier, staffordshire terrier, american pit bull terrier, pit bull terrier  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier: american staffordshire terrier, staffordshire terrier, american pit bull terrier, pit bull terrier  
+PetLabelDog: 1  ClassLabelDog: 1
+
+     Scottish _Fold_Cat_01.jpg: 
+Real:                   fold cat   Classifier:               persian cat, cat  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                  Table_01.jpg: 
+Real:                      table   Classifier:                           desk  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 0 # NOT Matches: 4
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+
+*** Results Summary for CNN Model Architecture VGG ***
+N Images            :   4
+N Dog Images        :   2
+N Not-Dog Images    :   2
+
+
+*** summary statistics (percentages) on Model Run ***
+ key: 0.00%
+ key: 100.00%
+ key: 0.00%
+ key: 100.00%
+ key: 0.00%
+
+INCORRECT Dog Breed Assignment:
+Real:                        dog  Classifier: american staffordshire terrier, staffordshire terrier, american pit bull terrier, pit bull terrier
+Real:                        dog  Classifier: american staffordshire terrier, staffordshire terrier, american pit bull terrier, pit bull terrier
+
+** Total Elapsed Runtime: 0:0:1
