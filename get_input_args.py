@@ -48,7 +48,7 @@ def get_input_args():
                         help='pet images folder path')
     #          --arch - the CNN model architecture
     #          --dogfile - text file of names of dog breeds
-    parser.add_argument('--arch', type=str, default='vgg',
+    parser.add_argument('--arch', type=str, default='vgg',choices=['vgg','alexnet','resnet'],
                         help='CNN model name')
     parser.add_argument('--dogfile', type=str, default='dognames.txt',
                         help='dog names text file')

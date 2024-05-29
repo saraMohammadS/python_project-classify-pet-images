@@ -73,10 +73,11 @@ def print_results(results_dic, results_stats_dic, model,
     #          that's accessed by key 'n_notdogs_img' using dictionary
     #          results_stats_dic
     #
-    print(f"N Not-Dog Images    : {results_stats_dic['n_notdogs_img']:3d}")
+    #print(f"N Not-Dog Images    : {results_stats_dic['n_notdogs_img']:3d}")
+    print("{:20}: {:3d}".format('N Not-Dog Images', results_stats_dic['n_notdogs_img']))
     # Prints summary statistics (percentages) on Model Run
     print("\n\n*** summary statistics (percentages) on Model Run ***")
-    for key in results_stats_dic:
+    for key, value in results_stats_dic.items():
         # TODO: 6b. REPLACE pass with CODE that prints out all the percentages
         #           in the results_stats_dic dictionary. Recall that all
         #           percentages in results_stats_dic have 'keys' that start with
@@ -87,7 +88,7 @@ def print_results(results_dic, results_stats_dic, model,
         #           by results_stats_dic[key]
         #
         if key.startswith('pct'):
-            print(f" key: {results_stats_dic[key]:.2f}%")
+            print(f" {key}: {value} %")
 
         # IF print_incorrect_dogs == True AND there were images incorrectly
     # classified as dogs or vice versa - print out these cases

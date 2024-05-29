@@ -179,8 +179,8 @@ def calculates_results_stats(results_dic):
     else:
         results_stats_dic['pct_correct_notdogs'] = 0.0
     #Percentage Label Matches ( regardless if they're a dog)
-    results_stats_dic['pct_correctly_matched_images'] = (results_stats_dic['n_match'] /
-                                                         results_stats_dic['n_images']) * 100.0
+    #results_stats_dic['pct_correctly_matched_images'] = (results_stats_dic['n_match'] /
+     #                                                    results_stats_dic['n_images']) * 100.0
     # TODO 5f. REPLACE None with the results_stats_dic dictionary that you
     # created with this function
     return results_stats_dic
